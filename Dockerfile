@@ -1,4 +1,4 @@
 FROM shippable/minv2:latest
 
-ADD . /home/pyhthon
+ADD . /home/python
 EXPOSE 50001
