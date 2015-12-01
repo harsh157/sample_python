@@ -5,8 +5,8 @@ build_image: shippableimages/ubuntu1204_python
 python:
   - 2.7
   - 3.2
-  - 3.3
-  - 3.4
+  #- 3.3
+  #- 3.4
 
 install:
   - pip install -r requirements.txt
@@ -22,5 +22,12 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml
 
 notifications:
-  email:
-   - exampleone@org.com
+ email:
+   recipients:
+     - "harsh@shippable.com"
+   on_success: always
+   on_failure: always
+ irc:
+   pull_requests: true
+   channels:  
+    - "chat.freenode.net#newTestShip"
