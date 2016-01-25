@@ -28,6 +28,5 @@ notifications:
    on_success: always
    on_failure: always
  irc:
-   pull_requests: true
    channels:  
-    - "chat.freenode.net#newTestShip"
+    - "chat.freenode.net#shipTest"
