@@ -29,4 +29,4 @@ notifications:
    on_failure: always
  irc:
    channels:  
-    - "chat.freenode.net#shipTest"
+    - "irc.freenode.org#shipTest"
